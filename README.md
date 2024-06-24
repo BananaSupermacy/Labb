@@ -1,5 +1,6 @@
 ## Labb Scripting framework
 Includes cross script communication and server-client communication
+Link to get Labb -> https://create.roblox.com/store/asset/18195889612/Labb
 
 # Example way on how to run Labb
 ```lua
