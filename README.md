@@ -30,3 +30,20 @@ end
 Labb.State = "Loaded" --Determine if all handlers are loaded
 print("Server loaded, \nTIME: ", tick() - loadStarted)
 ```
+
+# Example way on how to use Signal
+```lua
+local Signal = require(PATH_TO_SIGNAL)
+
+local exampleSignal = Signal.new("example")
+local exampleConnection = exampleSignal:Connect(function(...)
+     local args = {...}
+
+     for _, v in args do
+	print(v)
+     end
+end)
+
+exampleSignal:Fire(12, 13, 14, 15, "sigma")
+exampleConnection:Disconnect()
+```
