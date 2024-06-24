@@ -27,6 +27,6 @@ for i, v in Loader.Storage do
 	end
 end
 
-Loader.State = "Loaded"
+Labb.State = "Loaded" --Determine if all handlers are loaded
 print("Server loaded, \nTIME: ", tick() - loadStarted)
 ```
