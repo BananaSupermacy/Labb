@@ -66,3 +66,20 @@ exampleCrossSignal:Fire(EXAMPLE_PLAYER, "sigma") --Works just like FireClient
 exampleCrossSignal:FireAll(12, 13, 14, 15, "sigma") --Works just like FireAllClients
 exampleConnection:Disconnect()
 ```
+
+```lua
+(It's client script)
+local CrossSignal = require(PATH_TO_CROSSSIGNAL)
+
+local exampleCrossSignal = Signal.get("example") --Gets CrossSignal Instance from server
+local exampleConnection = exampleCrossSignal:Connect(function(...)
+     local args = {...}
+
+     for _, v in args do
+	print(v)
+     end
+end)
+
+exampleCrossSignal:Fire(EXAMPLE_PLAYER, "sigma") --Works just like FireServer
+exampleConnection:Disconnect()
+```
