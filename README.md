@@ -1,8 +1,8 @@
-## Labb Scripting framework
-Includes cross script communication and server-client communication
-\nLink to get Labb -> https://create.roblox.com/store/asset/18195889612/Labb
+# Labb Scripting framework
+Includes cross script communication and server-client communication, get it [here](https://create.roblox.com/store/asset/18195889612/Labb)!
 
-# Example way on how to run Labb
+
+## Example way on how to run Labb
 ```lua
 local Labb = require(PATH_TO_LABB)
 
@@ -32,7 +32,7 @@ Labb.State = "Loaded" --Determine if all handlers are loaded
 print("Server loaded, \nTIME: ", tick() - loadStarted)
 ```
 
-# Example way on how to use Signal
+## Example way on how to use Signal
 ```lua
 local Signal = require(PATH_TO_SIGNAL)
 
@@ -49,7 +49,7 @@ exampleSignal:Fire(12, 13, 14, 15, "sigma")
 exampleConnection:Disconnect()
 ```
 
-# Example way on how to use CrossSignal
+## Example way on how to use CrossSignal
 ```lua
 (It's server script)
 local CrossSignal = require(PATH_TO_CROSSSIGNAL)
